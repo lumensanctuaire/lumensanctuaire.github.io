@@ -1,1 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>LUMEN — Clarifier l’esprit</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  background:#05070d;
+  color:#e8e2d3;
+  font-family:'Cormorant Garamond', serif;
+  line-height:1.8;
+}
+
+.container{
+  max-width:720px;
+  margin:0 auto;
+  padding:80px 20px;
+}
+
+.center{text-align:center}
+
+h1,h2,h3{
+  font-family:'Cinzel';
+  font-weight:400;
+}
+
+h1{font-size:2.8rem}
+h2{font-size:1.8rem;color:#cfae6a}
+
+.divider{
+  height:1px;
+  background:rgba(207,174,106,0.15);
+  margin:60px 0;
+}
+
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.hero p{
+  max-width:420px;
+  margin:20px auto;
+  color:#cfae6a;
+}
+
+.enter{
+  margin-top:30px;
+  display:inline-block;
+  border-bottom:1px solid rgba(207,174,106,0.4);
+  color:#cfae6a;
+  cursor:pointer;
+}
+
+.choice{
+  border:1px solid rgba(207,174,106,0.15);
+  padding:20px;
+  margin:15px 0;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.choice:hover{
+  border-color:#cfae6a;
+}
+
+.read{
+  max-width:600px;
+  margin:0 auto;
+}
+
+.quote{
+  border-left:2px solid #cfae6a;
+  padding-left:15px;
+  font-style:italic;
+}
+
+.book{
+  margin:50px 0;
+  text-align:center;
+}
+
+.price{
+  color:#cfae6a;
+  margin-top:10px;
+  font-size:1.2rem;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 20px;
+  border:1px solid #cfae6a;
+  color:#cfae6a;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#cfae6a;
+  color:#05070d;
+}
+
+.footer{
+  text-align:center;
+  margin-top:80px;
+  color:#cfae6a;
+  font-style:italic;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+  <div>
+    <h1>LUMEN</h1>
+    <p>
+      Tu n’as pas besoin de tout comprendre.<br><br>
+      Entre simplement avec ce que tu es.
+    </p>
+    <a class="enter" onclick="scrollToStart()">Entrer</a>
+  </div>
+</section>
+
+<!-- INTRO -->
+
+<section class="container center" id="start">
+  <p>
+    LUMEN est un système pour structurer l’esprit,<br>
+    comprendre le réel,<br>
+    et avancer sans confusion.
+  </p>
+</section>
+
+<div class="divider"></div>
+
+<!-- CHOIX -->
+
+<section class="container">
+  <h2 class="center">Par où commencer</h2>
+
+  <div class="choice" onclick="scrollToLecture()">J’ai besoin de voir plus clair</div>
+  <div class="choice" onclick="scrollToLecture()">J’ai besoin de comprendre le monde</div>
+  <div class="choice" onclick="scrollToLecture()">J’ai besoin d’un axe</div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTENU -->
+
+<section class="container read" id="lecture">
+
+<h2>Salle I — Les 7 Piliers</h2>
+
+<p>Tu ne manques pas d’informations.</p>
+<p>Tu manques de structure.</p>
+
+<div class="divider"></div>
+
+<p>Aujourd’hui, tout est accessible.</p>
+<p>Mais rien n’est organisé.</p>
+
+<p>Et sans structure, même le vrai devient confus.</p>
+
+<div class="divider"></div>
+
+<p><strong>Voir</strong> — regarder sans projeter</p>
+<p><strong>Distinguer</strong> — ne pas tout mélanger</p>
+<p><strong>Nommer</strong> — clarifier par les mots</p>
+<p><strong>Relier</strong> — comprendre les liens</p>
+<p><strong>Mesurer</strong> — éviter les extrêmes</p>
+<p><strong>Vérifier</strong> — ne pas croire aveuglément</p>
+<p><strong>Se positionner</strong> — avancer réellement</p>
+
+<div class="divider"></div>
+
+<p class="quote">
+Tu ne contrôles pas le monde.<br>
+Mais tu peux contrôler la manière dont tu le lis.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- OFFRES -->
+
+<section class="container">
+
+<h2 class="center">Le Codex</h2>
+
+<div class="book">
+<h3>Comprendre</h3>
+<p>Structurer la pensée</p>
+<div class="price">47€</div>
+<a href="#" class="btn">Accéder</a>
+</div>
+
+<div class="book">
+<h3>Agir</h3>
+<p>Lire le monde</p>
+<div class="price">67€</div>
+<a href="#" class="btn">Accéder</a>
+</div>
+
+<div class="book">
+<h3>Transmettre</h3>
+<p>Incarner</p>
+<div class="price">87€</div>
+<a href="#" class="btn">Accéder</a>
+</div>
+
+<div class="book">
+<h3>Cycle complet</h3>
+<div class="price">147€</div>
+<a href="#" class="btn">Accéder</a>
+</div>
+
+</section>
+
+<div class="footer">
+Tu peux avancer à ton rythme.
+</div>
+
+<script>
+function scrollToStart(){
+  document.getElementById("start").scrollIntoView({behavior:"smooth"});
+}
+
+function scrollToLecture(){
+  document.getElementById("lecture").scrollIntoView({behavior:"smooth"});
+}
+</script>
+
+</body>
+</html>
